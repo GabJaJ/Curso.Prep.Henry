@@ -4,7 +4,7 @@
 const nuevaString = "hola";
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = "5";
+const nuevoNum = 8;
 
 // Crea una variable booleana:
 const nuevoBool = true;
@@ -36,7 +36,7 @@ function suma(x, y) {
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
   var result = x + y;
-  return reult
+  return result
 
 
 }
@@ -74,11 +74,12 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (str1.lenght === str2.lenght) {
-    return true
-  } else {
-    return false
+  if(str1.length === str2.length){
+    resultadoLongitud = true;
+  }else{
+    resultadoLongitud = false;
   }
+  return resultadoLongitud;
 }
 
 function menosQueNoventa(num) {
@@ -174,11 +175,12 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(numero === 0) {
-    return "Es positivo";
-  } 
-  else {
-    return "Es negativo";
+  if (numero > 0) {
+    return ("Es positivo")
+  } else if (numero < 0) {
+    return ("Es negativo")
+  } else (numero === 0); {
+    return false
   }
 }
 
@@ -201,7 +203,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "Hola" + nombre + "!";
+  return "Hola " + nombre + "!" ;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -244,7 +246,7 @@ function esVocal(letra){
   if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
     return "Es vocal"
   }
-  return "Dato incorrecto"
+  return "Dato incorrecto" 
 }
 
 
