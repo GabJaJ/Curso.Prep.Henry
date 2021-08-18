@@ -4,7 +4,7 @@
 const nuevaString = "hola";
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = "27";
+const nuevoNum = "5";
 
 // Crea una variable booleana:
 const nuevoBool = true;
@@ -35,7 +35,10 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  return x + y;
+  var result = x + y;
+  return reult
+
+
 }
 
 function resta(x, y) {
@@ -71,7 +74,11 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  return str1.lenght === str2.lenght;
+  if (str1.lenght === str2.lenght) {
+    return true
+  } else {
+    return false
+  }
 }
 
 function menosQueNoventa(num) {
@@ -79,9 +86,9 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num < 90) {
-    return true;
+    return true
   } else {
-    return false;
+    return false
   }
 }
 
@@ -89,13 +96,18 @@ function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  return num > 50;
+  if (num > 50) {
+    return true
+  } else {
+    return false
+  }
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  return x % y;
+  var resto = x % y;
+  return resto
 }
 
 function esPar(num) {
@@ -105,7 +117,7 @@ function esPar(num) {
   if(num % 2 === 0) {
     return true;
   } else {
-    return flase;
+    return false;
   }
 }
 
@@ -130,7 +142,7 @@ function elevarAlCuadrado(num) {
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  return num * num * num;
+  return num ** 3;
 }
 
 function elevar(num, exponent) {
